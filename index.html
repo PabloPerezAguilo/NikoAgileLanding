@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,459 +16,473 @@
 </head>
 <body>
 
+<div class="wrapper">
 
-
-<!-- Header Area wrapper Starts -->
-<header id="header-wrap">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header d-flex align-items-center">
-                <i class="hamburguer-icon d-inline d-lg-none mx-3 pointer">menu</i>
-
-                <a href="index.html" class="navbar-brand"><img src="assets/img/logo-naranja.svg" alt="" style="max-width: 200px;"></a>
+    <div class="sidenav js-sidenav">
+        <div class="sidenav__holder">
+            <span class="sidenav__close js-close-sidenav"></span>
+            <div class="sidenav__header">
+                Header
             </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#hero-area" translate> Home </a>
+            <div class="sidenav__content">
+                Content
+            </div>
+            <div class="sidenav__footer">
+                Footer
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header d-flex align-items-center">
+                    <i class="material-icons hamburguer-icon d-inline d-lg-none pointer burger js-burger">menu</i>
+
+                    <a href="index.html" class="navbar-brand"><img src="assets/img/logo-naranja.svg" alt="" style="max-width: 200px;"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#hero-area" translate> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#what-is"> ¿Qué es Nikoagile? </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#installation"> Instalación y uso </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team"> El equipo </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [href]="slackUrl"> Iniciar sesión </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Area Start -->
+        <div id="hero-area" class="hero-area-bg">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row py-5">
+
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="contents text-left">
+                            <h2 class="head-title wow fadeInUp">MIDE LA SATISFACCIÓN DE TU EQUIPO</h2>
+                            <p>
+                                NikoAgile te permite agilizar los procesos de feedback con los miembros de tu equipo de trabajo. <br>
+                                Expresa, valora y comparte tus sensaciones.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a class="d-flex justify-content-center justify-content-md-start" [href]="slackUrl">
+                                    <img class="login-slack-button mt-4" src="assets/img/slack-button-es.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
+                            <!--            <img class="img-fluid" src="assets/img/product.png" alt="">-->
+                        </div>
+                    </div>
+                    <div class="d-none d-md-flex col-12 col-md-6 justify-content-center align-items-center">
+                        <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
+                            <img class="hero-image" src="assets/img/illustration.svg" alt="niko illustration">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Services Section Start -->
+    <section id="what-is-nikoagile" class="section-padding">
+        <div id="what-is" class="ancla">services</div>
+
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">¿Qué es Nikoagile?</h2>
+                <p>NikoAgile es una aplicación para agilizar la comunicación con tu equipo, que actualmente se encuentra en fase inicial, y en septiembre del 2020 será lanzada en fase beta. Tras muchos años trabajando con Metodologías Ágiles, especialmente con SCRUM,
+                    echábamos en falta una aplicación con la que poder medir la satisfacción de todos los miembros del equipo al tiempo que aportan feedback e ideas.
+                    Las empresas las forman personas y su satisfacción es un indicador que debería tenerse en cuenta siempre.</p>
+                <p class="mt-4">Con NikoAgile puedes:</p>
+            </div>
+
+            <div class="row mt-3">
+                <!-- item -->
+
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.9s">
+                        <div class="col-12 col-md-6 icon px-1 px-md-5">
+                            <img class="img-fluid" src="assets/img/screens/groups.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-left">
+                            <h3>CREAR GRUPOS</h3>
+                            <p>Crea diversos grupos de usuarios modelando la estructura de trabajo. De esta forma se define la visibilidad entre los usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.9s">
+                        <div class="d-flex d-md-none col-12 col-md-6 icon px-1 px-md-5">
+                            <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-right">
+                            <h3>MEDIR SATISFACCIÓN</h3>
+                            <p>Cada usuario reporta desde el propio Slack cómo ha ido el día para luego tener métricas, histogramas o alertas.</p>
+                        </div>
+                        <div class="d-none d-md-flex col-12 col-md-6 icon px-1 px-md-5">
+                            <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.9s">
+                        <div class="col-12 col-md-6 icon px-1 px-md-5">
+                            <img class="img-fluid" src="assets/img/screens/graph.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-left">
+                            <h3>VER EL HISTORIAL</h3>
+                            <p>Puedes ver un historial de los miembros de tu grupo a lo largo del tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.9s">
+                        <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-right">
+                            <div class="d-flex d-md-none col-12 col-md-6 icon px-1 px-md-5">
+                                <img class="img-fluid" src="assets/img/screens/comment.png" alt="">
+                            </div>
+                            <h3>VER COMENTARIOS</h3>
+                            <p>Puedes ver los comentarios de los miembros de tu grupo que hayan enviado cada día.</p>
+                        </div>
+                        <div class="d-none d-md-flex col-12 col-md-6 icon px-1 px-md-5">
+                            <img class="img-fluid" src="assets/img/screens/comment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Installation section start -->
+    <section id="installation-section" class="section-padding">
+        <div id="installation" class="ancla">installation</div>
+        <div class="diagonal-container">
+            <div class="container">
+                <h2 class="section-title text-white text-left py-4 wow fadeInRight" data-wow-delay="0.3s">INSTALACIÓN Y USO</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="installation-container">
+                <ul class="installation-list">
+                    <li>
+                        <h4 class="installation-title">
+                            <i class="material-icons installation-icons">add_circle_outline</i>
+                            1. Añade a Slack
+                        </h4>
+                        <p class="paragraph">Instala la aplicación <a routerLink="/install" class="underline primary-link">desde aquí</a> o desde el directorio de aplicaciones de Slack.</p>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#what-is"> ¿Qué es Nikoagile? </a>
+                    <li>
+                        <h4 class="installation-title">
+                            <i class="material-icons installation-icons">how_to_reg</i>
+                            2. Concede los permisos a la aplicación
+                        </h4>
+                        <p class="paragraph">Slack te pedirá que concedas permisos a NikoAgile para que el bot pueda escribir a los usuarios y añadir atajos de teclado. Es un proceso normal y que puedes revocar en el futuro al desinstalar la app de tu espacio.</p>
+                        <p>Sólo se guardará el ID de Slack, el nick, el avatar y el nombre de cada usuario para mostrar los datos. No recogemos e-mails u otra información personal. Todos los días se actualizan los datos de usuarios por si hubiesen cambiado desde Slack.</p>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#installation"> Instalación y uso </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team"> El equipo </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" [href]="slackUrl"> Iniciar sesión </a>
+                    <li>
+                        <h4 class="installation-title">
+                            <i class="material-icons installation-icons">thumb_up</i>
+                            3. Proceso completado, ¡comienza a usarlo!
+                        </h4>
                     </li>
 
                 </ul>
-
             </div>
-        </div>
 
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero Area Start -->
-    <div id="hero-area" class="hero-area-bg">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row py-5">
-
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div class="contents text-left">
-                        <h2 class="head-title wow fadeInUp">MIDE LA SATISFACCIÓN DE TU EQUIPO</h2>
-                        <p>
-                            NikoAgile te permite agilizar los procesos de feedback con los miembros de tu equipo de trabajo. <br>
-                            Expresa, valora y comparte tus sensaciones.
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <a class="d-flex justify-content-center justify-content-md-start" [href]="slackUrl">
-                                <img class="login-slack-button mt-4" src="assets/img/slack-button-es.png"/>
-                            </a>
+            <div class="row mt-5">
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/install.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-left">
+                            <h3>INSTALA EN TU ESPACIO
+                            </h3>
+                            <p>
+                                El usuario que realiza la primera instalación es quien adquiere el rol de administrador. Más tarde podrás nombrar otros admins.</p>
                         </div>
                     </div>
-                    <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
-                        <!--            <img class="img-fluid" src="assets/img/product.png" alt="">-->
+                </div>
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.4s">
+                        <!--  vista movil-->
+                        <div class="d-flex d-md-none col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/install2.png" alt="">
+                        </div>
+                        <!--  vista movil-->
+                        <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-right">
+                            <h3>ESTABLECE LA CONFIGURACIÓN INICIAL</h3>
+                            <p>Configura los ajustes que usarán por defecto todos los miembros de tu equipo. </p>
+                        </div>
+                        <!--  vista desktop-->
+                        <div class="d-none d-md-flex col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/install2.png" alt="">
+                        </div>
+                        <!--  vista desktop-->
                     </div>
                 </div>
-                <div class="d-none d-md-flex col-12 col-md-6 justify-content-center align-items-center">
-                    <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
-                        <img class="hero-image" src="assets/img/illustration.svg" alt="niko illustration">
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/groups.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-left">
+                            <h3>CREA GRUPOS</h3>
+                            <p>Los administradores pueden crear grupos, gestionar los usuarios y definir nuevos admins. </p>
+                        </div>
                     </div>
                 </div>
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
+                        <!--  vista movil-->
+                        <div class="d-flex d-md-none col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/graph.png" alt="">
+                        </div>
+                        <!--  vista movil-->
 
-            </div>
+                        <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-right">
+                            <h3>CONTROL DE SATISFACCIÓN</h3>
+                            <p>Desde la página podrás ver el historial del estado de tus usuarios o recibir avisos cuando alguien registre una puntuación baja.</p>
+                        </div>
+                        <!--  vista desktop-->
+                        <div class="d-none d-md-flex col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/graph.png" alt="">
+                        </div>
+                        <!--  vista desktop-->
 
-        </div>
-    </div>
-    <!-- Hero Area End -->
-
-</header>
-<!-- Header Area wrapper End -->
-
-<!-- Services Section Start -->
-<section id="what-is-nikoagile" class="section-padding">
-    <div id="what-is" class="ancla">services</div>
-
-    <div class="container">
-        <div class="section-header text-center">
-            <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">¿Qué es Nikoagile?</h2>
-            <p>NikoAgile es una aplicación para agilizar la comunicación con tu equipo, que actualmente se encuentra en fase inicial, y en septiembre del 2020 será lanzada en fase beta. Tras muchos años trabajando con Metodologías Ágiles, especialmente con SCRUM,
-                echábamos en falta una aplicación con la que poder medir la satisfacción de todos los miembros del equipo al tiempo que aportan feedback e ideas.
-                Las empresas las forman personas y su satisfacción es un indicador que debería tenerse en cuenta siempre.</p>
-            <p class="mt-4">Con NikoAgile puedes:</p>
-        </div>
-
-        <div class="row mt-3">
-            <!-- item -->
-
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.9s">
-                    <div class="col-12 col-md-6 icon px-1 px-md-5">
-                        <img class="img-fluid" src="assets/img/screens/groups.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-left">
-                        <h3>CREAR GRUPOS</h3>
-                        <p>Crea diversos grupos de usuarios modelando la estructura de trabajo. De esta forma se define la visibilidad entre los usuarios.</p>
                     </div>
                 </div>
-            </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.9s">
-                    <div class="d-flex d-md-none col-12 col-md-6 icon px-1 px-md-5">
-                        <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-right">
-                        <h3>MEDIR SATISFACCIÓN</h3>
-                        <p>Cada usuario reporta desde el propio Slack cómo ha ido el día para luego tener métricas, histogramas o alertas.</p>
-                    </div>
-                    <div class="d-none d-md-flex col-12 col-md-6 icon px-1 px-md-5">
-                        <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.9s">
-                    <div class="col-12 col-md-6 icon px-1 px-md-5">
-                        <img class="img-fluid" src="assets/img/screens/graph.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-left">
-                        <h3>VER EL HISTORIAL</h3>
-                        <p>Puedes ver un historial de los miembros de tu grupo a lo largo del tiempo.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.9s">
-                    <div class="col-12 col-md-6 services-content px-1 px-md-5 text-center text-md-right">
-                        <div class="d-flex d-md-none col-12 col-md-6 icon px-1 px-md-5">
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="col-12 col-md-6 icon px-5">
                             <img class="img-fluid" src="assets/img/screens/comment.png" alt="">
                         </div>
-                        <h3>VER COMENTARIOS</h3>
-                        <p>Puedes ver los comentarios de los miembros de tu grupo que hayan enviado cada día.</p>
-                    </div>
-                    <div class="d-none d-md-flex col-12 col-md-6 icon px-1 px-md-5">
-                        <img class="img-fluid" src="assets/img/screens/comment.png" alt="">
+                        <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-left">
+                            <h3>SEGUIMIENTO DE COMENTARIOS</h3>
+                            <p>Si un usuario ha enviado un comentario para un día concreto puede verse pinchando sobre el día que lo ha enviado.</p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- item -->
+                <div class="col-12">
+                    <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
+                        <!--  vista movil-->
+                        <div class="d-flex d-md-none col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
+                        </div>
+                        <!--  vista movil-->
+
+                        <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-right">
+                            <h3>ENVIO DE SATISFACCIÓN</h3>
+                            <p>Los usuarios recibirán una notificacián cuando el administrador haya programado preguntando cómo ha ido el día. También pueden enviarlo de forma proactiva con <b>/report</b> o <b>/enviar</b> cada día.</p>
+                        </div>
+                        <!--  vista desktop-->
+                        <div class="d-none d-md-flex col-12 col-md-6 icon px-5">
+                            <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
+                        </div>
+                        <!--  vista desktop-->
+
+                    </div>
+                </div>
+
             </div>
-
-
         </div>
+    </section>
+    <!-- installation section End -->
 
-    </div>
-</section>
-<!-- Services Section End -->
 
-<!-- Installation section start -->
-<section id="installation-section" class="section-padding">
-    <div id="installation" class="ancla">installation</div>
-    <div class="diagonal-container">
+    <!-- Team Section Start -->
+    <section id="team-section" class="section-padding text-center bg-light-orange">
+        <div id="team" class="ancla"></div>
+
         <div class="container">
-            <h2 class="section-title text-white text-left py-4 wow fadeInRight" data-wow-delay="0.3s">INSTALACIÓN Y USO</h2>
-        </div>
-    </div>
-    <div class="container">
-        <div class="installation-container">
-            <ul class="installation-list">
-                <li>
-                    <h4 class="installation-title">
-                        <i class="material-icons installation-icons">add_circle_outline</i>
-                        1. Añade a Slack
-                    </h4>
-                    <p class="paragraph">Instala la aplicación <a routerLink="/install" class="underline primary-link">desde aquí</a> o desde el directorio de aplicaciones de Slack.</p>
-                </li>
-                <li>
-                    <h4 class="installation-title">
-                        <i class="material-icons installation-icons">how_to_reg</i>
-                        2. Concede los permisos a la aplicación
-                    </h4>
-                    <p class="paragraph">Slack te pedirá que concedas permisos a NikoAgile para que el bot pueda escribir a los usuarios y añadir atajos de teclado. Es un proceso normal y que puedes revocar en el futuro al desinstalar la app de tu espacio.</p>
-                    <p>Sólo se guardará el ID de Slack, el nick, el avatar y el nombre de cada usuario para mostrar los datos. No recogemos e-mails u otra información personal. Todos los días se actualizan los datos de usuarios por si hubiesen cambiado desde Slack.</p>
-                </li>
-                <li>
-                    <h4 class="installation-title">
-                        <i class="material-icons installation-icons">thumb_up</i>
-                        3. Proceso completado, ¡comienza a usarlo!
-                    </h4>
-                </li>
-
-            </ul>
-        </div>
-
-        <div class="row mt-5">
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/install.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-left">
-                        <h3>INSTALA EN TU ESPACIO
-                        </h3>
-                        <p>
-                            El usuario que realiza la primera instalación es quien adquiere el rol de administrador. Más tarde podrás nombrar otros admins.</p>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">El equipo #Cuarenteners</h2>
+                        <p class="mb-5" style="color:black">Mientras el Covid19 arrasaba el mundo nosotros programábamos esperando tener un bar al que volver.</p>
                     </div>
                 </div>
             </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.4s">
-                    <!--  vista movil-->
-                    <div class="d-flex d-md-none col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/install2.png" alt="">
-                    </div>
-                    <!--  vista movil-->
-                    <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-right">
-                        <h3>ESTABLECE LA CONFIGURACIÓN INICIAL</h3>
-                        <p>Configura los ajustes que usarán por defecto todos los miembros de tu equipo. </p>
-                    </div>
-                    <!--  vista desktop-->
-                    <div class="d-none d-md-flex col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/install2.png" alt="">
-                    </div>
-                    <!--  vista desktop-->
-                </div>
-            </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/groups.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-left">
-                        <h3>CREA GRUPOS</h3>
-                        <p>Los administradores pueden crear grupos, gestionar los usuarios y definir nuevos admins. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
-                    <!--  vista movil-->
-                    <div class="d-flex d-md-none col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/graph.png" alt="">
-                    </div>
-                    <!--  vista movil-->
-
-                    <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-right">
-                        <h3>CONTROL DE SATISFACCIÓN</h3>
-                        <p>Desde la página podrás ver el historial del estado de tus usuarios o recibir avisos cuando alguien registre una puntuación baja.</p>
-                    </div>
-                    <!--  vista desktop-->
-                    <div class="d-none d-md-flex col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/graph.png" alt="">
-                    </div>
-                    <!--  vista desktop-->
-
-                </div>
-            </div>
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInLeft" data-wow-delay="0.4s">
-                    <div class="col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/comment.png" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-left">
-                        <h3>SEGUIMIENTO DE COMENTARIOS</h3>
-                        <p>Si un usuario ha enviado un comentario para un día concreto puede verse pinchando sobre el día que lo ha enviado.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- item -->
-            <div class="col-12">
-                <div class="services-item row what-is-item wow fadeInRight" data-wow-delay="0.4s">
-                    <!--  vista movil-->
-                    <div class="d-flex d-md-none col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
-                    </div>
-                    <!--  vista movil-->
-
-                    <div class="col-12 col-md-6 services-content px-1 py-2 py-md-0 px-md-5 text-center text-md-right">
-                        <h3>ENVIO DE SATISFACCIÓN</h3>
-                        <p>Los usuarios recibirán una notificacián cuando el administrador haya programado preguntando cómo ha ido el día. También pueden enviarlo de forma proactiva con <b>/report</b> o <b>/enviar</b> cada día.</p>
-                    </div>
-                    <!--  vista desktop-->
-                    <div class="d-none d-md-flex col-12 col-md-6 icon px-5">
-                        <img class="img-fluid" src="assets/img/screens/satisfaction.png" alt="">
-                    </div>
-                    <!--  vista desktop-->
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- installation section End -->
-
-
-<!-- Team Section Start -->
-<section id="team-section" class="section-padding text-center bg-light-orange">
-    <div id="team" class="ancla"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-header text-center">
-                    <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">El equipo #Cuarenteners</h2>
-                    <p class="mb-5" style="color:black">Mientras el Covid19 arrasaba el mundo nosotros programábamos esperando tener un bar al que volver.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <!-- Team Item Starts -->
-                <div class="team-item text-center">
-                    <div class="team-img">
-                        <img class="img-fluid" src="assets/img/team/pablo.jpg" alt="">
-                        <div class="team-overlay">
-                            <div class="overlay-social-icon text-center">
-                                <ul class="social-icons">
-                                    <li><a href="https://pabloperez.com.es" target="_blank"><i class="lni-star-filled hover-effect"></i></a></li>
-                                    <li><a href="https://twitter.com/PabloPerez_85" target="_blank"><i class="lni-twitter-filled hover-effect" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/pabloperezaguilo/" target="_blank"><i class="lni-linkedin-filled hover-effect" aria-hidden="true"></i></a></li>
-                                </ul>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <!-- Team Item Starts -->
+                    <div class="team-item text-center">
+                        <div class="team-img">
+                            <img class="img-fluid" src="assets/img/team/pablo.jpg" alt="">
+                            <div class="team-overlay">
+                                <div class="overlay-social-icon text-center">
+                                    <ul class="social-icons">
+                                        <li><a href="https://pabloperez.com.es" target="_blank"><i class="lni-star-filled hover-effect"></i></a></li>
+                                        <li><a href="https://twitter.com/PabloPerez_85" target="_blank"><i class="lni-twitter-filled hover-effect" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/pabloperezaguilo/" target="_blank"><i class="lni-linkedin-filled hover-effect" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="info-text">
-                        <h3><a href="#">Pablo Pérez</a></h3>
-                        <p>Full-stack</p>
-                    </div>
-                </div>
-                <!-- Team Item Ends -->
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <!-- Team Item Starts -->
-                <div class="team-item text-center">
-                    <div class="team-img">
-                        <img class="img-fluid" src="assets/img/team/alex-molto.jpg" alt="alex molto">
-                        <div class="team-overlay">
-                            <div class="overlay-social-icon text-center">
-                                <ul class="social-icons">
-                                    <li><a href="https://www.linkedin.com/in/alexandrafront/" target="_blank"><i class="lni-linkedin-filled hover-effect" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://github.com/sinsit1" target="_blank"><i class="lni-github hover-effect" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                        <div class="info-text">
+                            <h3><a href="#">Pablo Pérez</a></h3>
+                            <p>Full-stack</p>
                         </div>
                     </div>
-                    <div class="info-text">
-                        <h3><a href="#">Alex Moltó</a></h3>
-                        <p>Front-end</p>
-                    </div>
+                    <!-- Team Item Ends -->
                 </div>
-                <!-- Team Item Ends -->
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <!-- Team Item Starts -->
-                <div class="team-item text-center">
-                    <div class="team-img">
-                        <img class="img-fluid" src="assets/img/team/dani.jpg" alt="">
-                        <div class="team-overlay">
-                            <div class="overlay-social-icon text-center">
-                                <ul class="social-icons">
-                                    <li><a href="https://www.danielescoz.dev" target="_blank"><i class="lni-star-filled hover-effect"></i></a></li>
-                                    <li><a href="https://twitter.com/DanielEscoz" target="_blank"><i class="lni-twitter-filled hover-effect" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://github.com/Darkhogg" target="_blank"><i class="lni-github hover-effect" aria-hidden="true"></i></a></li>
-                                </ul>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <!-- Team Item Starts -->
+                    <div class="team-item text-center">
+                        <div class="team-img">
+                            <img class="img-fluid" src="assets/img/team/alex-molto.jpg" alt="alex molto">
+                            <div class="team-overlay">
+                                <div class="overlay-social-icon text-center">
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.linkedin.com/in/alexandrafront/" target="_blank"><i class="lni-linkedin-filled hover-effect" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://github.com/sinsit1" target="_blank"><i class="lni-github hover-effect" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="info-text">
-                        <h3><a href="#">Daniel Escoz</a></h3>
-                        <p>Back-end</p>
-                    </div>
-                </div>
-                <!-- Team Item Ends -->
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <!-- Team Item Starts -->
-                <div class="team-item text-center">
-                    <div class="team-img">
-                        <img class="img-fluid" src="assets/img/team/yaiza.jpg" alt="">
-                        <div class="team-overlay">
-                            <div class="overlay-social-icon text-center">
-                                <ul class="social-icons">
-                                    <li><a href="https://es.linkedin.com/in/yaiza-barta-9992b2114" target="_blank"><i class="lni-linkedin-filled hover-effect" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+                        <div class="info-text">
+                            <h3><a href="#">Alex Moltó</a></h3>
+                            <p>Front-end</p>
                         </div>
                     </div>
-                    <div class="info-text">
-                        <h3><a href="#">Yaiza Barta</a></h3>
-                        <p>Designer</p>
+                    <!-- Team Item Ends -->
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <!-- Team Item Starts -->
+                    <div class="team-item text-center">
+                        <div class="team-img">
+                            <img class="img-fluid" src="assets/img/team/dani.jpg" alt="">
+                            <div class="team-overlay">
+                                <div class="overlay-social-icon text-center">
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.danielescoz.dev" target="_blank"><i class="lni-star-filled hover-effect"></i></a></li>
+                                        <li><a href="https://twitter.com/DanielEscoz" target="_blank"><i class="lni-twitter-filled hover-effect" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://github.com/Darkhogg" target="_blank"><i class="lni-github hover-effect" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-text">
+                            <h3><a href="#">Daniel Escoz</a></h3>
+                            <p>Back-end</p>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <!-- Team Item Starts -->
+                    <div class="team-item text-center">
+                        <div class="team-img">
+                            <img class="img-fluid" src="assets/img/team/yaiza.jpg" alt="">
+                            <div class="team-overlay">
+                                <div class="overlay-social-icon text-center">
+                                    <ul class="social-icons">
+                                        <li><a href="https://es.linkedin.com/in/yaiza-barta-9992b2114" target="_blank"><i class="lni-linkedin-filled hover-effect" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-text">
+                            <h3><a href="#">Yaiza Barta</a></h3>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+
+    <!-- Subscribe Section Start -->
+    <section class="subscribes section-padding">
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10 col-lg-10">
+                    <h4 class="wow fadeInUp installation-title d-flex justify-content-center" data-wow-delay="0.3s">Contacto</h4>
+                    <p class="wow fadeInUp" data-wow-delay="0.6s">
+                        <br>
+                        ¿Tienes dudas? Contacta con nosotros y te echaremos un cable.
+                        <br>
+                    </p>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-center">
+                        <div class="subscribes-links px-4 d-flex align-items-center font-weight-bold">
+                            <i class="material-icons material-icons-outlined mr-1">email</i>
+                            <a href="mailto:info@nikoagile.com">info@nikoagile.com</a>
+                        </div>
+                        <div class="subscribes-links px-4 d-flex align-items-center font-weight-bold">
+                            <i class="material-icons material-icons-outlined mr-1">facebook</i>
+                            <a href="https://www.facebook.com/nikoagile" target="_blank">Nikoagile</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Team Item Ends -->
+
             </div>
-
         </div>
-    </div>
-</section>
-<!-- Team Section End -->
+    </section>
+    <!-- Subscribe Section End -->
 
 
-<!-- Subscribe Section Start -->
-<section class="subscribes section-padding">
-
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 col-lg-10">
-                <h4 class="wow fadeInUp installation-title d-flex justify-content-center" data-wow-delay="0.3s">Contacto</h4>
-                <p class="wow fadeInUp" data-wow-delay="0.6s">
-                    <br>
-                    ¿Tienes dudas? Contacta con nosotros y te echaremos un cable.
-                    <br>
-                </p>
-                <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-center">
-                    <div class="subscribes-links px-4 d-flex align-items-center font-weight-bold">
-                        <i class="material-icons material-icons-outlined mr-1">email</i>
-                        <a href="mailto:info@nikoagile.com">info@nikoagile.com</a>
-                    </div>
-                    <div class="subscribes-links px-4 d-flex align-items-center font-weight-bold">
-                        <i class="material-icons material-icons-outlined mr-1">facebook</i>
-                        <a href="https://www.facebook.com/nikoagile" target="_blank">Nikoagile</a>
-                    </div>
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>NikoAgile 2020</p>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
-<!-- Subscribe Section End -->
+    </section>
 
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+        <i class="lni-arrow-up"></i>
+    </a>
 
-<section id="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p>NikoAgile 2020</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Go to Top Link -->
-<a href="#" class="back-to-top">
-    <i class="lni-arrow-up"></i>
-</a>
-
-
-
-
+</div>
 
 
 </body>
@@ -524,6 +537,25 @@
 
         -->
 
+<script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"></script>
+<script>
+    // Burger
+    var $btnBurger = $('.js-burger');
+    var $sidenav = $('.js-sidenav');
+    var $btnCloseSidenav = $('.js-close-sidenav');
 
+    $btnBurger.on('click', function () {
+        $(this).toggleClass('is-open');
+        $sidenav.addClass('is-open');
+    });
 
+    //SideNav
+    $('.js-close-sidenav').on('click', function () {
+        $sidenav.removeClass('is-open');
+        $btnBurger.removeClass('is-open');
+    });
+</script>
 
